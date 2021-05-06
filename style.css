@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+body,div {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    height: 100%;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla',sans-serif;
+
+}
+
+.main-container {
+    width: 700px;
+    height: 410px;
+    background-color: white;
+    font-size: 0;
+}
+.main-container .left {
+    display: inline-block;
+    width: 350px;
+    height: 410px;
+    vertical-align: top;
+    text-align: center;
+    background-color: rgb(75, 218, 218);
+}
+.main-container .left .week {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: white;
+    line-height: 100px;
+}
+.main-container .left .day {
+    font-size: 180px;
+    color: white;
+}
+.main-container .right {
+    display: inline-block;
+    width: 350px;
+    height: 410px;
+    text-align: center;
+}
+.main-container .right .year {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: rgb(33, 165, 165);
+    font-weight: bolder;
+    line-height: 100px;
+}
+.main-container .right .calendar {
+    padding: 0 35px;
+}
+.main-container .right .calendar .weeks .item{
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 40px;
+    line-height: 40px;
+    color: crimson;
+    font-weight: bolder;
+}
+.main-container .right .calendar .days .day {
+    font-size: 15px;
+    display: inline-block;
+    width: 40px;
+    line-height: 40px;
+    transform: .2s;
+    cursor: pointer;
+} 
+.main-container .right .calendar .days .today {
+    background-color: crimson;
+    font-weight: bolder;
+    color: white;
+}
+.main-container .right .calendar .days .day:hover {
+    background-color: crimson;
+    color: white;
+    font-weight: bolder;
+}
+.main-container .right .calendar .controlBtn input {
+    width: 48%;
+}
